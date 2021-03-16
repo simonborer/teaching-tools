@@ -53,12 +53,14 @@ Depends on `studentinfo.json`, a file which is .gitignore'd here, for obvious re
 
 studentinfo.json is an array of object, each object referring to a student, with the following keys:
 
-```{
+```
+{
     "student number": "",
     "first name": "",
     "last name": "",
     "email": ""
-}```
+}
+```
 
 `generate-db-emails` uses OpenSSL to generate a secure password for each student. (Could it be done with with Node's crypto? Yes, but it's not in a LTS node version yet, so...) It then creates an SQL script (`createStudentTables.sql`) which will create a database for each student, with permissions granted on the database based on the student number and generated password. It also creates a "demo" table within the database. 
 
