@@ -1,3 +1,8 @@
+studentinfo.json
+output.txt
+createStudentTables.sql
+emailNotifications.csv
+
 # Logs
 logs
 *.log

@@ -9,7 +9,8 @@ To run any of the scripts in this folder, install the UI.Vision browser extensio
 Since, naturally, you can't have comments in JSON files, notes for each script are described below:
 
 - [Get Assignments](#get-assignments)
-	- [Get Assignments TODO](#get-assignments-todo)
+	- [Get Assignments TODO](#get-assignments-todos)
+- [Notify](#notify)
 
 ## Get Assignments
 
@@ -29,3 +30,7 @@ If you don't want to pause and resume after each file is saved, use the JSON in 
 - Having to resume the script is annoying. There are two reasons to pause the script: 
 	1. I believe there's a bug in UI.Vision (I've seen similar bug reports), causing the double-click of the "Grade Next Item" button. Doesn't seem to be an issue in get-assignments-fast, but mitigated by the pause in get-assignments. 
 	2. Adding student names to assignments - doing this with automation requires an extra module, I think, to interact with the system save dialog. There may be a workaround, but requires investigation.
+
+## Notify
+
+Script to send emails with custom database credentials to each student. Works in Outlook Web. Depends on `emailNotifications.csv` generate by `generate-db-emails.js` node script.

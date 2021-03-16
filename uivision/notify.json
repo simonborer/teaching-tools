@@ -1,0 +1,55 @@
+{
+  "Name": "notify",
+  "CreationDate": "2021-3-16",
+  "Commands": [
+    {
+      "Command": "csvRead",
+      "Target": "dbNotify.csv",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=id__6",
+      "Value": "",
+      "Targets": [
+        "id=id__6",
+        "xpath=//*[@id=\"id__6\"]",
+        "xpath=//span[@id='id__6']",
+        "xpath=//span/span/span",
+        "css=#id__6"
+      ]
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"ReadingPaneContainerId\"]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/input",
+      "Value": "${!COL1}"
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@aria-label=\"Add a subject\"]",
+      "Value": "Database credentials",
+      "Targets": [
+        "id=TextField2069",
+        "xpath=//*[@id=\"TextField2069\"]",
+        "xpath=//input[@id='TextField2069']",
+        "xpath=//div[2]/div/div/div/input",
+        "css=#TextField2069"
+      ]
+    },
+    {
+      "Command": "XClick",
+      "Target": "xpath=//*[@id=\"ReadingPaneContainerId\"]/div/div/div/div/div[2]/div",
+      "Value": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${!COL2}",
+      "Value": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "",
+      "Value": ""
+    }
+  ]
+}
