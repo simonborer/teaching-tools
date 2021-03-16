@@ -33,20 +33,16 @@ dt.forEach(d => {
   sql.push(stmt);
 });
 
-fs.writeFile('createStudentTables.sql', sql);
+// TODO: with mysql, we could run this directly from node, buuuut I kind of like throwing it into DBeaver just in case an error pops up in the syntax.
+fs.writeFile('createStudentTables.sql', sql.toString(), function (err) {if (err) throw err;});
 
-// dt.forEach(d => {
-//   let em = "\"Hello " + d["first name"] + " " + d["last name"] + "!\n\nSo far in class we've just been reading data using SELECT statements, but shortly we'll start working with 'data manipulation language', where you can add, update and delete data. If everyone was trying to do this on the same database at the same time, that would be a big mess! As such, I've created a database for each of you.\n\nI'll go over how to make a new connection in DBeaver when we meet for our next lab - in other words, you don't need to do anything after receiving this email! It's just to give you your new username and password.\n\nYour username: " + d["student number"] + "\n\nYour password: " + d.password + "\n\nThat being said, setting up this new connection will be exactly the same process as it was before, except with a new username and password, plus access to a new database (which is called " + d["student number"] + " and which only you and I have access to).\n\n\n\n- Simon\"";
-//   d.emailContent = em;
-//   const emArr = [d.email, em];
-//   emails.push(emArr);
-// });
+dt.forEach(d => {
+  let em = "\"Hello " + d["first name"] + " " + d["last name"] + "!\n\nSo far in class we've just been reading data using SELECT statements, but shortly we'll start working with 'data manipulation language', where you can add, update and delete data. If everyone was trying to do this on the same database at the same time, that would be a big mess! As such, I've created a database for each of you.\n\nI'll go over how to make a new connection in DBeaver when we meet for our next lab - in other words, you don't need to do anything after receiving this email! It's just to give you your new username and password.\n\nYour username: " + d["student number"] + "\n\nYour password: " + d.password + "\n\nThat being said, setting up this new connection will be exactly the same process as it was before, except with a new username and password, plus access to a new database (which is called " + d["student number"] + " and which only you and I have access to).\n\n\n\n- Simon\"";
+  d.emailContent = em;
+  const emArr = [d.email, em];
+  emails.push(emArr);
+});
 
-// let csvContent = "data:text/csv;charset=utf-8," + emails.map(e => e.join(",")).join("\n");
+fs.writeFile('emailNotifications.csv', emails.map(e => e.join(",")).join("\n"), function (err) {if (err) throw err;});
 
-// var encodedUri = encodeURI(csvContent);
-// var link = document.createElement("a");
-// link.innerHTML = "download csv";
-// link.setAttribute("href", encodedUri);
-// link.setAttribute("download", "my_data.csv");
-// document.body.appendChild(link);
+cliExec('rm output.txt');
