@@ -8,6 +8,9 @@ To run any of the scripts in this folder, install the UI.Vision browser extensio
 
 Since, naturally, you can't have comments in JSON files, notes for each script are described below:
 
+- [Get Assignments](#get-assignments)
+	- [Get Assignments TODO](#get-assignments-todo)
+
 ## Get Assignments
 
 To run this macro, go to your course's Blackboard site, and then navigate to Grade Centre > Assignments, and select an attempt for an assignment. This macro runs sequentially, so to get all student attempts for the assignment, start with the first available.
@@ -23,6 +26,6 @@ If you don't want to pause and resume after each file is saved, use the JSON in 
 ### Get Assignments TODOs
 
 - Blackboard will sometimes kick you back to the Assignments page, but inconsistently. Not sure how to get back to the next assignment.
-- There are two reasons to pause the script: 
+- Having to resume the script is annoying. There are two reasons to pause the script: 
 	1. I believe there's a bug in UI.Vision (I've seen similar bug reports), causing the double-click of the "Grade Next Item" button. Doesn't seem to be an issue in get-assignments-fast, but mitigated by the pause in get-assignments. 
 	2. Adding student names to assignments - doing this with automation requires an extra module, I think, to interact with the system save dialog. There may be a workaround, but requires investigation.
