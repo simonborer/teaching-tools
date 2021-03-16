@@ -60,6 +60,6 @@ studentinfo.json is an array of object, each object referring to a student, with
     "email": ""
 }```
 
-`generate-db-emails` uses OpenSSL to generate a secure password for each student. It then creates an SQL script (`createStudentTables.sql`) which will create a database for each student, with permissions granted on the database based on the student number and generated password. It also creates a "demo" table within the database. 
+`generate-db-emails` uses OpenSSL to generate a secure password for each student. (Could it be done with with Node's crypto? Yes, but it's not in a LTS node version yet, so...) It then creates an SQL script (`createStudentTables.sql`) which will create a database for each student, with permissions granted on the database based on the student number and generated password. It also creates a "demo" table within the database. 
 
 Additionally, it creates a CSV file (`emailNotifications.csv`), which can be used with the UI.Vision script [Notify](#notify) to send personal emails to each student with the username and password for their new database.
