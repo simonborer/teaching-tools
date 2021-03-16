@@ -1,0 +1,16 @@
+{
+  "Name": "Get assignments fast",
+  "CreationDate": "2021-3-10",
+  "Commands": [
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"currentAttempt_submissionList\"]/li/div/a",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"panelbutton2\"]/div/div/div[3]/a/span",
+      "Value": ""
+    }
+  ]
+}

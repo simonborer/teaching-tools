@@ -1,0 +1,46 @@
+{
+  "Name": "Get assignments",
+  "CreationDate": "2021-3-16",
+  "Commands": [
+    {
+      "Command": "storeText",
+      "Target": "xpath=//*[@class=\"students-pager\"]/h3/span[3]",
+      "Value": "attempts"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "var str = ${attempts};var attempt = str.match(/\\d(?=\\sof)+/)[0];var attempts = str.match(/\\d(?=\\))+/)[0];return attempt === attempts;",
+      "Value": "isFinalAttempt"
+    },
+    {
+      "Command": "if_v2",
+      "Target": "${isFinalAttempt} == true",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"currentAttempt_submissionList\"]/li/div/a",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"currentAttempt_submissionList\"]/li/div/a",
+        "xpath=//li/div/a",
+        "css=#currentAttempt_submissionList > li > div > a"
+      ]
+    },
+    {
+      "Command": "pause",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "css=a[title=\"Grade Next Item\"]>span",
+      "Value": ""
+    }
+  ]
+}
