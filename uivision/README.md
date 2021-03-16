@@ -9,7 +9,8 @@ To run any of the scripts in this folder, install the UI.Vision browser extensio
 Since, naturally, you can't have comments in JSON files, notes for each script are described below:
 
 - [Get Assignments](#get-assignments)
-	- [Get Assignments TODO](#get-assignments-todo)
+	- [Get Assignments TODO](#get-assignments-todos)
+
 
 ## Get Assignments
 
