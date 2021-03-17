@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { cliExec } = require("./cliexec"),
+const { cliExec } = require("../utils/node/cliexec"),
   fs = require('fs'),
   assert = require('assert').strict;
 
@@ -8,7 +8,7 @@ const dt = require('../studentinfo.json');
 const numberOfStudents = dt.length;
 
 cliExec('rm output.txt');
-cliExec('bash ./bash/pwGen.sh ' + numberOfStudents);
+cliExec('bash ../utils/pwGen.sh ' + numberOfStudents);
 
 const generatePasswords = fs.readFileSync('output.txt', 'utf8');
 

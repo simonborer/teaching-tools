@@ -6,6 +6,7 @@ This repo constitutes a variety of tools that have helped me find these efficien
 
 - [UI.Vision](#ui-vision)
 - [Node](#node)
+- [Bash](#bash)
 
 ## UI.Vision
 
@@ -65,3 +66,9 @@ studentinfo.json is an array of object, each object referring to a student, with
 `generate-db-emails` uses OpenSSL to generate a secure password for each student. (Could it be done with with Node's crypto? Yes, but it's not in a LTS node version yet, so...) It then creates an SQL script (`createStudentTables.sql`) which will create a database for each student, with permissions granted on the database based on the student number and generated password. It also creates a "demo" table within the database. 
 
 Additionally, it creates a CSV file (`emailNotifications.csv`), which can be used with the UI.Vision script [Notify](#notify) to send personal emails to each student with the username and password for their new database.
+
+## Bash
+
+### [nospaces](bash/nospaces.sh)
+
+This is a script to recursively replace whitespace with underscores in all file and folder names in a directory. Students have a bad habit of adding spaces in their file and folder names, which is a pain when referencing them in scripts or in the command line. This makes things a little easier.
