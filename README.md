@@ -82,6 +82,10 @@ Injects a script into each HTML file in a folder. The script uses the browser's 
 
 Run this script once, and open the file in the browser to quickly see if the student's webpage meets project requirements.
 
+#### assert HTML TODO
+
+Running this script multiple times will inject the script into the HTML files multiple times. Would be good to avoid this.
+
 ## Bash
 
 ### [nospaces](bash/nospaces.sh)
