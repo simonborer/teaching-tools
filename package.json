@@ -1,0 +1,29 @@
+{
+  "name": "teaching-tools",
+  "version": "1.0.0",
+  "description": "Various command line utilities for teaching",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonborer/teaching-tools.git"
+  },
+  "keywords": [
+    "teaching",
+    "tools",
+    "node",
+    "bash",
+    "UI.Vision"
+  ],
+  "author": "Simon Borer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonborer/teaching-tools/issues"
+  },
+  "homepage": "https://github.com/simonborer/teaching-tools#readme"
+}

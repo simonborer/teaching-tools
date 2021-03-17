@@ -1,0 +1,20 @@
+{
+	"tags exist": ["head","body","title","h1","link","nav","ul","li"],
+	"custom": [{
+		"description": "valid doctype",
+		"requirement": "\"HTML\"===document.doctype.name.toUpperCase()"
+	},{
+		"description": "lang attribute",
+		"requirement": "\"en\"===document.querySelectorAll(\"html\")[0].getAttribute(\"lang\")"
+	},{
+		"description": "3 sections",
+		"requirement": "document.querySelectorAll('section').length > 2"
+	},{
+		"description": "3 section headings",
+		"requirement": "document.querySelectorAll('section h2').length > 2"
+	}],
+	"loops": [{
+		"querySelector": "img",
+		"attr": "alt"
+	}]
+}
