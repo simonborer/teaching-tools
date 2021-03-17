@@ -4,7 +4,7 @@
   "Commands": [
     {
       "Command": "csvRead",
-      "Target": "dbNotify.csv",
+      "Target": "emailNotifications.csv",
       "Value": ""
     },
     {
