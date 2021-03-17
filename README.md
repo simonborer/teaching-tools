@@ -23,6 +23,15 @@ This repo constitutes a variety of tools that have helped me find these efficien
 - [Build a requirements checklist and quickly fill out a rubric](#coming-soon)
 - [Write once in Hugo to generate both slides & notes, deployed via Netlify.](#coming-soon)
 
+## Pain points
+- Blackboard API endpoints would allow for **a lot** of automation
+- I haven't fully explored these well-regarded linting libraries. A lot of possibilities here.
+ - [SQL Lint](https://github.com/joereynolds/sql-lint)
+ - [Stylelint](https://stylelint.io/)
+ - [HTML Lint](https://github.com/htmllint/htmllint)
+- Obviously I'd like to extend these tools to be more helpful to instructors teaching other classes. Need their input on how best to make things extensible.
+- I'd ultimately like to give students access to (some) of the testing tools so they could ask more targetted questions (and ultimately produce higher quality work). This could be a little tricky, as I don't want to expose my answer keys, or make the targets for producing cool work too narrow.
+
 ## Tools
 - [UI.Vision](#ui-vision)
 - [Node](#node)
