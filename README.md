@@ -46,6 +46,8 @@ If you don't want to pause and resume after each file is saved, use the JSON in 
 
 Script to send emails with custom database credentials to each student. Works in Outlook Web. Depends on `emailNotifications.csv` generate by `generate-db-emails.js` node script.
 
+Note that since we need to use XClick and XType, this script will crap out every 12 loops, so... whatever, it's fine, since we're doing a manual click to send the actual emails, since we want to check the greeting in case we're not sure what constitutes a particular student's first name anyway.
+
 ## Node
 
 ### Generate-db-emails
@@ -110,3 +112,13 @@ Then all I need to do to fix the audio is to run the command `tomono 8`, and it 
 #### tomono TODO
 
 - I have commands commented out in [the file](bash/tomono.sh) that will also convert to mp4 and compress, I just haven't gotten around to testing them yet. Should help with my Premiere workflow.
+
+### Coming soon:
+- Validate CSS
+- Validate HTML
+- Open page with express server and chrome-cli
+- Parse CSS with PostCSS
+- Diff student SQL queries with the answer key.
+- Connect to either a SQLite or MySQL database to diff the results from student queries and your answer key (including matching the number of rows and perfect matches).
+- Build a requirements checklist and quickly fill out a rubric
+- Write once in Hugo to generate both slides & notes, deployed via Netlify.
