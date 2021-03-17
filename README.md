@@ -91,3 +91,22 @@ Running this script multiple times will inject the script into the HTML files mu
 ### [nospaces](bash/nospaces.sh)
 
 This is a script to recursively replace whitespace with underscores in all file and folder names in a directory. Students have a bad habit of adding spaces in their file and folder names, which is a pain when referencing them in scripts or in the command line. This makes things a little easier.
+
+### [tomono](bash/tomono.sh)
+
+I record my lectures with Quicktime.
+
+Picture-in-picture workflow:
+- `File > New Movie Recording` (opens a window feeding from the webcam)
+- `View > Float on top` (keeps the webcam feed on top of all open windows)
+- `File > New Screen Recording` (records your screen, including the webcam feed)
+
+One quirk of Quicktime is that when you're using an external mic, it only records in mono to one channel. Weird, right? Anyway, this bash script is my workaround. 
+
+Since I'll typically record multiple videos for a single lecture (because stretching and bathroom breaks happen), I'll save the videos with the following naming convention: {week number}-{sequence}, i.e. `8-2.mov` is the second video recording from my week 8 lecture.
+
+Then all I need to do to fix the audio is to run the command `tomono 8`, and it will use `ffmpeg` to copy the audio to both channels for all the videos created for week 8.
+
+#### tomono TODO
+
+- I have commands commented out in [the file](bash/tomono.sh) that will also convert to mp4 and compress, I just haven't gotten around to testing them yet. Should help with my Premiere workflow.
