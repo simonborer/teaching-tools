@@ -4,6 +4,26 @@ COVID brought new challenges to teaching. For me, that included the requirement 
 
 This repo constitutes a variety of tools that have helped me find these efficiencies.
 
+## Use
+(Still need to write this part - usage represented in this repo doesn't necessarily represent how I use these scripts in my regular workflow - I put my bash scripts in my `/bin/` folder and alias them in my `.bashrc`; node scripts are [run as cli tools](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs), etc. Also, there's a lot of opinionated, albeit relative, file paths in these scripts - that should be taken care of for enhanced usability)
+
+## Problems being solved
+- Partial automation for [downloading student work from Blackboard](#get-assignments)
+- After downloading student work, [uncompressing a variety of file formats, cleaning up the uncompressed directory structure and deleting superfluous system files](#unzip).
+- Partial automation for [giving students their own remote databases](#notify), and [emailing them their credentials](#generate-db-emails).
+- [Quickly check if a page contains elements, attributes, etc. dictated by assignment requirements.](#assert-html)
+- [Batch replace spaces with underscores in files and directories for easier command line access](#nospaces)
+- [Fix Quicktime bug that records external sound to only one channel](#tomono)
+- [Validate CSS](#coming-soon)
+- [Validate HTML](#coming-soon)
+- [Open page with express server and chrome-cli](#coming-soon)
+- [Parse CSS with PostCSS](#coming-soon)
+- [Diff student SQL queries with the answer key.](#coming-soon)
+- [Connect to either a SQLite or MySQL database to diff the results from student queries and your answer key (including matching the number of rows and perfect matches). Generates a report page to quickly evaluate student work.](#coming-soon)
+- [Build a requirements checklist and quickly fill out a rubric](#coming-soon)
+- [Write once in Hugo to generate both slides & notes, deployed via Netlify.](#coming-soon)
+
+## Tools
 - [UI.Vision](#ui-vision)
 - [Node](#node)
 - [Bash](#bash)
@@ -113,8 +133,8 @@ Then all I need to do to fix the audio is to run the command `tomono 8`, and it 
 
 - I have commands commented out in [the file](bash/tomono.sh) that will also convert to mp4 and compress, I just haven't gotten around to testing them yet. Should help with my Premiere workflow.
 
-### Coming soon:
-- Proper documentation in the README based on problem-solving rather than tool categories.
+### Coming soon
+I have a bunch more tools I'm working on putting into this repo:
 - Validate CSS
 - Validate HTML
 - Open page with express server and chrome-cli
