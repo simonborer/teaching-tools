@@ -67,6 +67,15 @@ studentinfo.json is an array of object, each object referring to a student, with
 
 Additionally, it creates a CSV file (`emailNotifications.csv`), which can be used with the UI.Vision script [Notify](#notify) to send personal emails to each student with the username and password for their new database.
 
+### [unzip](node/unzip.js)
+
+Students submit work in a variety of compressed formats, often including system files. This script does the following:
+
+- Uncompresses `.zip`, `.rar` and `.7z` file formats to a duplicate directory.
+- Were the files compressed in a folder? If not, put them in their own folder. If so, make sure they're not redundantly nested.
+- Deletes junk system files and folders like `.DS_Store` and `__MACOSX`.
+- Archives the originals.
+
 ## Bash
 
 ### [nospaces](bash/nospaces.sh)
