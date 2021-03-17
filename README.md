@@ -39,11 +39,10 @@ To run any of the scripts in this folder, install the UI.Vision browser extensio
 Since, naturally, you can't have comments in JSON files, notes for each script are described below:
 
 - [Get Assignments](#get-assignments)
-	- [Get Assignments TODO](#get-assignments-todos)
 - [Notify](#notify)
 
 
-### Get Assignments
+### [Get Assignments](/uivision/get-assignments.json)
 
 To run this macro, go to your course's Blackboard site, and then navigate to Grade Centre > Assignments, and select an attempt for an assignment. This macro runs sequentially, so to get all student attempts for the assignment, start with the first available.
 
@@ -53,7 +52,8 @@ When it finds a valid attempt, it will click the download button, and pause, all
 
 Once you've saved the file, click "Resume" in the UI.Vision window.
 
-If you don't want to pause and resume after each file is saved, use the JSON in 'get-assignments-fast.json'.
+If you don't want to pause and resume after each file is saved, use the JSON in '[get-assignments-fast.json](/uivision/get-assignments-fast.json)'.
+
 
 #### Get Assignments TODOs
 
@@ -62,7 +62,7 @@ If you don't want to pause and resume after each file is saved, use the JSON in 
 	1. I believe there's a bug in UI.Vision (I've seen similar bug reports), causing the double-click of the "Grade Next Item" button. Doesn't seem to be an issue in get-assignments-fast, but mitigated by the pause in get-assignments. 
 	2. Adding student names to assignments - doing this with automation requires an extra module, I think, to interact with the system save dialog. There may be a workaround, but requires investigation.
 
-### Notify
+### [Notify](/uivision/notify.json)
 
 Script to send emails with custom database credentials to each student. Works in Outlook Web. Depends on `emailNotifications.csv` generate by `generate-db-emails.js` node script.
 
@@ -70,7 +70,7 @@ Note that since we need to use XClick and XType, this script will crap out every
 
 ## Node
 
-### Generate-db-emails
+### [Generate-db-emails](/node/generate-db-emails.js)
 
 Depends on `studentinfo.json`, a file which is .gitignore'd here, for obvious reasons.
 
@@ -134,7 +134,7 @@ Then all I need to do to fix the audio is to run the command `tomono 8`, and it 
 - I have commands commented out in [the file](bash/tomono.sh) that will also convert to mp4 and compress, I just haven't gotten around to testing them yet. Should help with my Premiere workflow.
 
 ### Coming soon
-I have a bunch more tools I'm working on putting into this repo:
+I have a bunch more tools already I'm working on incorporating into this repo. Stay tuned for:
 - Validate CSS
 - Validate HTML
 - Open page with express server and chrome-cli
