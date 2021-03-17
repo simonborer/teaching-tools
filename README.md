@@ -76,6 +76,12 @@ Students submit work in a variety of compressed formats, often including system 
 - Deletes junk system files and folders like `.DS_Store` and `__MACOSX`.
 - Archives the originals.
 
+### [assert HTML](node/assertHTML.js)
+
+Injects a script into each HTML file in a folder. The script uses the browser's `console.assert` function to check for HTML elements, attributes, etc. based on requirements outlined in a JSON file ([example](examples/requirements.json)).
+
+Run this script once, and open the file in the browser to quickly see if the student's webpage meets project requirements.
+
 ## Bash
 
 ### [nospaces](bash/nospaces.sh)
