@@ -32,6 +32,7 @@ fs.readdirSync('./work2').forEach(file => {
 const dirs = p => fs.readdirSync(p).filter(f => fs.statSync(path.join(p, f)).isDirectory());
 
 dirs('./work2').forEach(folder => {
+    // TODO shouldn't this be an rm -rf of archive if exists, since there's no use for /work2/archive/?
     if (folder !== 'archive') {
         const dirents = fs.readdirSync('./work2/' + folder, { withFileTypes: true });
         const filesNames = dirents
