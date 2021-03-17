@@ -114,6 +114,7 @@ Then all I need to do to fix the audio is to run the command `tomono 8`, and it 
 - I have commands commented out in [the file](bash/tomono.sh) that will also convert to mp4 and compress, I just haven't gotten around to testing them yet. Should help with my Premiere workflow.
 
 ### Coming soon:
+- Proper documentation in the README based on problem-solving rather than tool categories.
 - Validate CSS
 - Validate HTML
 - Open page with express server and chrome-cli
