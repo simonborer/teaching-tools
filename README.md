@@ -152,7 +152,7 @@ Then all I need to do to fix the audio is to run the command `tomono 8`, and it 
 
 ### Coming soon
 I have a bunch more tools already I'm working on incorporating into this repo. Stay tuned for:
-- Diff student SQL queries with the answer key.
-- Connect to either a SQLite or MySQL database to diff the results from student queries and your answer key (including matching the number of rows and perfect matches).
-- Build a requirements checklist and quickly fill out a rubric
-- Write once in Hugo to generate both slides & notes, deployed via Netlify.
+- Diff student SQL queries with the answer key. (Currently needs modularization - in the `db-auto-grader` branch.)
+- Connect to either a SQLite or MySQL database to diff the results from student queries and your answer key (including matching the number of rows and perfect matches). (Currently needs modularization - in the `db-auto-grader` branch.)
+- Build a requirements checklist and quickly fill out a rubric (Needs... I dunno exactly. To be incorporated into the HTML validation workflow? Currently in the `checklist` branch.)
+- Write once in Hugo to generate both slides & notes, deployed via Netlify. (Not checked in yet - still need to white label this.)
