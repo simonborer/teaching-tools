@@ -23,7 +23,7 @@ This repo constitutes a variety of tools that have helped me find these efficien
 - [Build a requirements checklist and quickly fill out a rubric](#coming-soon)
 - [Write once in Hugo to generate both slides & notes, deployed via Netlify.](#coming-soon)
 
-## Pain points
+## Pain points / Feature wishlist
 - Blackboard API endpoints would allow for **a lot** of automation
 - I haven't fully explored these well-regarded linting libraries. A lot of possibilities here.
  - [SQL Lint](https://github.com/joereynolds/sql-lint)
