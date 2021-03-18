@@ -8,17 +8,17 @@ This repo constitutes a variety of tools that have helped me find these efficien
 - Partial automation for [downloading student work from Blackboard](#get-assignments)
 - After downloading student work, [uncompressing a variety of file formats, cleaning up the uncompressed directory structure and deleting superfluous system files](#unzip).
 - Partial automation for [giving students their own remote databases](#notify), and [emailing them their credentials](#generate-db-emails).
-- [Quickly check if a page contains elements, attributes, etc. dictated by assignment requirements.](#assert-html)
-- [Batch replace spaces with underscores in files and directories for easier command line access](#nospaces)
-- [Fix Quicktime bug that records external sound to only one channel](#tomono)
+- Quickly [check if a page contains elements, attributes, etc.](#assert-html) dictated by assignment requirements.
+- [Batch replace spaces with underscores](#nospaces) in files and directories for easier command line access
+- [Fix Quicktime bug](#tomono) that records external sound to only one channel
 - [Validate CSS](#validate-and-serve)
 - [Validate HTML](#validate-and-serve)
 - [Open page with express server and chrome-cli](#validate-and-serve)
 - [Parse CSS with PostCSS](#validate-and-serve)
-- [Diff student SQL queries with the answer key.](#coming-soon)
-- [Connect to either a SQLite or MySQL database to diff the results from student queries and your answer key (including matching the number of rows and perfect matches). Generates a report page to quickly evaluate student work.](#coming-soon)
-- [Build a requirements checklist and quickly fill out a rubric](#coming-soon)
-- [Write once in Hugo to generate both slides & notes, deployed via Netlify.](#coming-soon)
+- [Diff student SQL queries](#coming-soon) against the answer key.
+- Connect to either a SQLite or MySQL database to [diff the results from student queries and your answer key](#coming-soon) (including matching the number of rows and perfect matches). Generates a report page to quickly evaluate student work.
+- [Build a requirements checklist](#coming-soon) and quickly fill out a rubric
+- Write notes once in Hugo to [generate both slides & notes](#coming-soon), deployed via Netlify.
 
 ## Pain points / Feature wishlist
 - Blackboard API endpoints would allow for **a lot** of automation
