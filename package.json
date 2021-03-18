@@ -4,9 +4,12 @@
   "description": "Various command line utilities for teaching",
   "devDependencies": {
     "csstree-validator": "^2.0.0",
+    "diff": "^5.0.0",
     "express": "^4.17.1",
     "html-validator": "^5.1.17",
-    "postcss": "^8.2.8"
+    "mysql": "^2.18.1",
+    "postcss": "^8.2.8",
+    "sqlite3": "^5.0.2"
   },
   "scripts": {
     "test": "test"

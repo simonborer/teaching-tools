@@ -4,6 +4,7 @@ createStudentTables.sql
 emailNotifications.csv
 work/
 work2/
+db-config.js
 
 # Logs
 logs
