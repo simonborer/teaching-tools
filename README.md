@@ -4,9 +4,6 @@ COVID brought new challenges to teaching. For me, that included the requirement 
 
 This repo constitutes a variety of tools that have helped me find these efficiencies.
 
-## Use
-(Still need to write this part - usage represented in this repo doesn't necessarily represent how I use these scripts in my regular workflow - I put my bash scripts in my `/bin/` folder and alias them in my `.bashrc`; node scripts are [run as cli tools](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs), etc. Also, there's a lot of opinionated, albeit relative, file paths in these scripts - that should be taken care of for enhanced usability)
-
 ## Problems being solved
 - Partial automation for [downloading student work from Blackboard](#get-assignments)
 - After downloading student work, [uncompressing a variety of file formats, cleaning up the uncompressed directory structure and deleting superfluous system files](#unzip).
@@ -31,6 +28,9 @@ This repo constitutes a variety of tools that have helped me find these efficien
  - [HTML Lint](https://github.com/htmllint/htmllint)
 - Obviously I'd like to extend these tools to be more helpful to instructors teaching other classes. Need their input on how best to make things extensible.
 - I'd ultimately like to give students access to (some) of the testing tools so they could ask more targetted questions (and ultimately produce higher quality work). This could be a little tricky, as I don't want to expose my answer keys, or make the targets for producing cool work too narrow.
+
+## Use
+(Still need to write this part - usage represented in this repo doesn't necessarily represent how I use these scripts in my regular workflow - I put my bash scripts in my `/bin/` folder and alias them in my `.bashrc`; node scripts are [run as cli tools](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs), etc. Also, there's a lot of opinionated, albeit relative, file paths in these scripts - that should be taken care of for enhanced usability)
 
 ## Tools
 - [UI.Vision](#ui-vision)
