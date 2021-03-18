@@ -14,10 +14,10 @@ This repo constitutes a variety of tools that have helped me find these efficien
 - [Quickly check if a page contains elements, attributes, etc. dictated by assignment requirements.](#assert-html)
 - [Batch replace spaces with underscores in files and directories for easier command line access](#nospaces)
 - [Fix Quicktime bug that records external sound to only one channel](#tomono)
-- [Validate CSS](#coming-soon)
-- [Validate HTML](#coming-soon)
-- [Open page with express server and chrome-cli](#coming-soon)
-- [Parse CSS with PostCSS](#coming-soon)
+- [Validate CSS](#validate-and-serve)
+- [Validate HTML](#validate-and-serve)
+- [Open page with express server and chrome-cli](#validate-and-serve)
+- [Parse CSS with PostCSS](#validate-and-serve)
 - [Diff student SQL queries with the answer key.](#coming-soon)
 - [Connect to either a SQLite or MySQL database to diff the results from student queries and your answer key (including matching the number of rows and perfect matches). Generates a report page to quickly evaluate student work.](#coming-soon)
 - [Build a requirements checklist and quickly fill out a rubric](#coming-soon)
@@ -78,6 +78,14 @@ Script to send emails with custom database credentials to each student. Works in
 Note that since we need to use XClick and XType, this script will crap out every 12 loops, so... whatever, it's fine, since we're doing a manual click to send the actual emails, since we want to check the greeting in case we're not sure what constitutes a particular student's first name anyway.
 
 ## Node
+
+### [Validate and Serve](/node/validate-and-serve.js)
+
+Checks HTML against the W3C validation service. This requires serving the page with Express (which, I mean, you were going to look at the page anyway, right?).
+
+Also [validates CSS](/utils/node/validateCSS.js), and [reports on media queries](/utils/node/report-media-queries.js), because mobile-first.
+
+Should probably incorporate HTML-lint at some point (possibly making the code more modular - see notes in file).
 
 ### [Generate-db-emails](/node/generate-db-emails.js)
 
@@ -144,10 +152,6 @@ Then all I need to do to fix the audio is to run the command `tomono 8`, and it 
 
 ### Coming soon
 I have a bunch more tools already I'm working on incorporating into this repo. Stay tuned for:
-- Validate CSS
-- Validate HTML
-- Open page with express server and chrome-cli
-- Parse CSS with PostCSS
 - Diff student SQL queries with the answer key.
 - Connect to either a SQLite or MySQL database to diff the results from student queries and your answer key (including matching the number of rows and perfect matches).
 - Build a requirements checklist and quickly fill out a rubric
