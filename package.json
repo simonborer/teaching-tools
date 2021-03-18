@@ -2,9 +2,11 @@
   "name": "teaching-tools",
   "version": "1.0.0",
   "description": "Various command line utilities for teaching",
-  "dependencies": {},
   "devDependencies": {
-    "express": "^4.17.1"
+    "csstree-validator": "^2.0.0",
+    "express": "^4.17.1",
+    "html-validator": "^5.1.17",
+    "postcss": "^8.2.8"
   },
   "scripts": {
     "test": "test"

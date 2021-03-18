@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+
+	font-family: sans-serif;
+}
+
+.my-excellent-class {
+	font-size: 2rem;
+	color: yellow;
+    font-family: fantasy; 
+}
+.section--page {
+    min-height: 55vh;
+    padding: 2rem 1rem 1rem;
+}
+
+.section--page:nth-of-type(odd) {
+    background: #dbb48a;
+    padding: 2rem;
+}
+.nav {
+    padding: 0;
+}
+.nav__item {
+    list-style:none;
+    display: inline-block; 
+}
+.nav__link {
+    padding: 1rem;   
+}
+.nav__link:hover {
+    background: orange;
+    color: #FAEBD7;
+}
+.header-img {
+    width: 10%;
+    height: 10px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/Yellow-faced_Honeyeater_2_-_Castlereagh_Nature_Reserve.jpg); 
+    background-size: auto;
+}
+h1 {
+	text-align: center;
+}
+@media (min-width: 40rem) {
+    .my-excellent-class {
+        color: #FAEBD7;
+    }
+}
+.float-left{
+    float: left;
+    padding: 1rem;
+}
+.on-hover{
+    color: purple;
+}
+.consistent-images{
+    max-width: 50%;
+    max-height: 50%;
+}
+.float-right{
+    float: right;
+    margin-left: 1rem;
+}
+.back-to-top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    background: #DB7093;
+}
+body{
+    color: #A52A2A;
+}
+h2{
+    color: #8B4513;
+}
+body{
+    background-color: #FFDAB9;
+}
