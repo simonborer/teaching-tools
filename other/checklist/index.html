@@ -73,6 +73,7 @@ requirements.forEach((req, index) => {
       container.innerHTML += "<div class='title'>" + key + "</div>";
       req[key].forEach((val, index) => {
         var nm = nme(val, index);
+        // This is dumb - values should be assignable through the JSON object
         container.innerHTML += group(nm, val, "extra", 0.5);
       });
     });
