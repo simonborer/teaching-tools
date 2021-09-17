@@ -40,7 +40,7 @@ fs.readdirSync('./work2').forEach(file => {
         }
         cliExec("mkdir -p ./work/archive && mv './work2/" + file + "' './work/archive/" + file + "' && rm -rf ./work/" + file);
     } else {
-        console.log("skipping " + file);
+        cliExec("mv './work/" + file + "' './work/archive/" + file + "'");
     }
 });
 
@@ -84,6 +84,7 @@ dirs('./work2').forEach(folder => {
     }
 });
 
+cliExec("bash bash/nospaces.sh ./work2");
 cliExec("rm -rf ./work2/archive");
 
 console.log("if this is a 'single-pager' assignment, run 'mv ./work2/*/*.html ./work2 && rm -r ./work2/*/'");
